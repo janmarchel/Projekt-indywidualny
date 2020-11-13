@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: 'Montseraat', sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.pricing-table {
+  width: 80%;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+ .pricing-table form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.pricing-table a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.pricing-table a span {
+  position: absolute;
+  display: block;
+}
+
+.pricing-table a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 10s linear infinite;
+
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.pricing-table a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 10s linear infinite;
+
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.pricing-table a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 10s linear infinite;
+
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.pricing-table a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 10s linear infinite;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+.pricing-table h2 {
+  display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+.pricing-table h2:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.pricing-table .price-item {
+  background: rgba(0,0,0,.5);
+  float: center;
+  width: 32%;
+  border-radius: 10px;
+}
+
+.pricing-table .price-item:nth-of-type(1),
+.pricing-table .price-item:nth-of-type(3) {
+  margin-top: 3%
+}
+
+.pricing-table .price-item:nth-of-type(2),
+.pricing-table .price-item:nth-of-type(3) {
+  margin-left: 1%;
+}
+
+.pricing-table .price-item ul {
+  list-style: none;
+  transition: all .5s ease-in-out;
+}
+
+.pricing-table .price-item ul:hover {
+  margin-top: -10px
+}
+
+.pricing-table .price-item ul li.plan {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pricing-table .price-item ul li.plus {
+  background: #000000;
+  color: #fff;
+}
+
+.pricing-table .price-item ul li.price {
+  padding: 15px;
+}
+
+.pricing-table .price-item ul li.price p {
+  font-weight: bold;
+  font-size: 35px;
+  color: #414141;
+}
+
+.pricing-table .price-item ul li.price p small {
+  font-size: 18px;
+  color: #6D6E70;
+  font-weight: normal;
+}
+
+.pricing-table .price-item ul li.price span {
+  display: block;
+}
+
+.pricing-table .price-item ul li.price .price-doller {
+  color:#6D6E70;
+  margin-top: 7%;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.pricing-table .price-item ul li.price .discount {
+  color: #000;
+  margin-top: 7%
+}
+
+.pricing-table .price-item ul li.price .plus {
+  color: #000;
+}
+
+.pricing-table .price-item ul li.btn {
+  margin: 24px 0;
+}
+
+.pricing-table .price-item ul li.btn button {
+  padding: 10px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #000;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.pricing-table .price-item ul li.btn button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.pricing-table .price-item ul li.btn button.plus {
+  background: #000;
+}
+
+.pricing-table .price-item ul li.list {
+  padding: 10px;
+  border-bottom: 1px solid #f2f2f2;
+  font-weight: bold
+}
+
+.pricing-table .price-item ul li.list:last-of-type {
+  border-bottom: none
+}
